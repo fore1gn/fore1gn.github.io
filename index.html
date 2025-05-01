@@ -228,7 +228,7 @@
     function draw() {
       background(0);
       translate(0, 0, 0);
-      rotateX(100);
+      rotateX(80);
       translate(0, 500, 0);
       noFill();
       stroke(67, 67, 67);
@@ -237,10 +237,10 @@
       for (let i = 0; i < 30; i++) {
         beginShape();
         for (let j = 0; j < 360; j += 5) {
-          let rad = i * 8;
+          let rad = i * 30;
           let x = rad * cos(j);
           let y = rad * sin(j);
-          let z = sin(frameCount * 2 + i * 10) * 50;
+          let z = sin(frameCount * 2 + i * 10) * 30;
           vertex(x, y, z);
         }
         endShape(CLOSE);
@@ -248,7 +248,7 @@
     }
     
   </script>
-  
+
       
 </body>
 </html>
