@@ -148,13 +148,36 @@
   }
 }
 
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 0vh;
+}
+
+.subtitle {
+  position: absolute;
+  top: 39vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'MILKER', sans-serif;
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeInOnly 2s ease-out forwards;
+  pointer-events: none;
+}
+
 
   </style>
 </head>
 <body>
-  <a href="about.html" class="fade-in-link">
-    <img src="media/title4.png" alt="Intro Image" class="fade-in-image" />
-  </a>  
+  <div class="title-wrapper">
+    <a href="about.html" class="fade-in-link">
+      <img src="media/title4.png" alt="Intro Image" class="fade-in-image" />
+    </a>
+    <p class="subtitle"></p>
+  </div>
   <section class="gallery-section">
     <div class="gallery">
       <a href="link1.html">
